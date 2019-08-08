@@ -1,0 +1,21 @@
+{
+  "name": "responsiveWebSiteStudies",
+  "homepage": "https://github.com/thiagomurtinho/responsiveWebSiteStudies",
+  "authors": [
+    "thiagomurtinho <thiago.murtinho@live.com>"
+  ],
+  "description": "",
+  "main": "Responsive Web Site",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
