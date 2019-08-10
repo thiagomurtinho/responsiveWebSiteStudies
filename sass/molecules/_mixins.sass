@@ -1,4 +1,4 @@
-/* ======== Cores */
+// ======== Cores
 $preto: #000
 $branco: white
 $azul: #31b1e7
@@ -7,7 +7,7 @@ $laranja: orange
 $verde: #9ad15e
 $cinza-claro: #e1e1e1
 
-/* ======== Font */
+// ======== Font
 $light: 300
 $regular: 400
 $bold: 700
@@ -32,7 +32,7 @@ $tablet: max-width 991px
   background-image:         linear-gradient($angle, $gradient1, $gradient2)
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
 
-/* ======== Outros */
+// ======== Outros
 =transition($transition...) 
   -moz-transition:    all $transition linear
   -o-transition:      all $transition linear
@@ -58,12 +58,12 @@ $tablet: max-width 991px
   $opacity-ie: $opacity * 100
   filter: alpha(opacity=$opacity-ie)
 
-/* ======== Background Color Opacity */
+// ======== Background Color Opacity
 =background-opacity($color: #000, $opacity: 0.85) 
   background: $color
   background: rgba($color, $opacity)
 
-/* ======== Columns */
+// ======== Columns
 =columns($count: 3, $gap: 10) 
   @include css3-prefix('column-count', $count)
   @include css3-prefix('column-gap', $gap)
