@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const { src, dest, parallel } = require('gulp');
 const pug = require('gulp-pug')
-const sass = require('gulp-ruby-sass')
+const sass = require('gulp-sass')
 const watch = require('gulp-watch')
 
 
