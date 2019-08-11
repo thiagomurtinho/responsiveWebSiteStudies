@@ -12,7 +12,7 @@ gulp.task('pug', () => {
 
 gulp.task('sass', () => {
     return gulp.src('sass/**/*.sass')
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(sass({ /* outputStyle: 'compressed' */ }).on('error', sass.logError))
     .pipe(gulp.dest('src/css'))
 })
 

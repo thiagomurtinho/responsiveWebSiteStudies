@@ -1,0 +1,71 @@
+- const styles = ['home', 'plugins', 'geral']
+- const title = "Home"
+- const navList = ['início', 'sobre', 'portifólio', 'contato']
+- const navLink = ['index', 'sobre', 'portifolio', 'contato']
+- const socialLink = ['#','#']
+- const socialFont = ['fa fa-facebook', 'fa fa-github-alt']
+
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+            )
+        meta(
+            http-equiv="X-UA-Compatible" 
+            content="ie=edge"
+            )
+        each style in styles
+            link(
+                rel="stylesheet" 
+                href= "css/"+style+".css"
+                )
+        title= title
+    body
+        header
+            .logo
+                img(src="images/logo-tag-topo.svg" alt="Logo Topo Tag")
+            #links
+                nav
+                    ul
+                        each link, list in navLink
+                            li.link
+                                a(href!=link+'.html')= navList[list]
+                ul.social
+                    each link, list in socialLink
+                        li.link
+                            a(href!=link)
+                                i(class=socialFont[list])
+
+            h1
+                |Thiago
+                strong  Murtinho
+            p Code // Share // Rebot
+
+        main
+            .itens
+                .imagem
+                    img(src="images/foto-tag-miolo.png" alt="Foto Tag")
+                .lapis
+                    i(class="fa fa-pencil")
+                .codigo
+                    i(class="fa fa-code")
+                .coracao
+                    i(class="fa fa-heart")
+                .lapis
+                    i(class="fa fa-pencil")
+            
+            p 
+                strong Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                | Cumque est, culpa consectetur quos ea odit dignissimos perferendis voluptatibus nobis sapiente minus. Quos similique necessitatibus cum, rem in repudiandae libero repellendus.
+            a(href="#" class="botao medio")
+                i(class="fa fa-eye") Continue lendo
+
+        footer
+            .logo-rodape
+                a(href="index.html")
+                    img(src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé")
+        
+        script(src="js/app.js")
