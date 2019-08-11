@@ -1,6 +1,6 @@
 - const styles = ['css/home.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', 'css/geral.css']
 - const title = "Home"
-- const navList = ['início', 'sobre', 'portifólio', 'contato']
+- const navList = ['início', 'sobre', 'portfólio', 'contato']
 - const navLink = ['index', 'sobre', 'portifolio', 'contato']
 - const socialLink = ['#','#']
 - const socialFont = ['fa fa-facebook', 'fa fa-github-alt']
@@ -44,27 +44,28 @@ html(lang="pt-br")
                 h1
                     |Thiago
                     strong  Murtinho
-                p Code // Share // Rebot
+                p Code // Share // Reboot
 
         main
-            .container
-                .itens
-                    .imagem
-                        img(src="images/foto-tag-miolo.png" alt="Foto Tag")
-                    .lapis
-                        i(class="fa fa-pencil")
-                    .codigo
-                        i(class="fa fa-code")
-                    .coracao
-                        i(class="fa fa-heart")
-                    .lapis
-                        i(class="fa fa-pencil")
-                
-                p 
-                    strong Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    | Cumque est, culpa consectetur quos ea odit dignissimos perferendis voluptatibus nobis sapiente minus. Quos similique necessitatibus cum, rem in repudiandae libero repellendus.
-                a(href="#" class="botao medio")
-                    i(class="fa fa-eye") Continue lendo
+            section.sobre
+                .container
+                    .itens
+                        .imagem
+                            img(src="images/foto-tag-miolo.png" alt="Foto Tag")
+                        .icone-lapis
+                            i(class="fa fa-pencil")
+                        .icone-codigo
+                            i(class="fa fa-code")
+                        .icone-coracao
+                            i(class="fa fa-heart")
+                        .icone-compartilhar
+                            i(class="fa fa-share-alt")
+                    .textos
+                        p 
+                            strong Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            | Cumque est, culpa consectetur quos ea odit dignissimos perferendis voluptatibus nobis sapiente minus. Quos similique necessitatibus cum, rem in repudiandae libero repellendus.
+                        a(href="#" class="botao medio")
+                            i(class="fa fa-eye") Continue lendo
 
         footer
             .logo-rodape
