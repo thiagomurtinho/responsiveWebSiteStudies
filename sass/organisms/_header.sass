@@ -1,17 +1,24 @@
 header
     +clearfix
+    min-height: 475px
+
     background: 
         image: url('../images/fundo-slide-pagina-inicial.jpg')
-        position: 
-        attachment:
-        size:
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        size: cover
+
     .logo
         float: left
+        margin: 30px 0 0
         img
             width: 70px
             height: 35px
     #links
         float: right
+        margin: 35px 0 0
         nav,
         .social
             display: inline-block
@@ -26,10 +33,31 @@ header
         .social
             li
                 display: inline-block
-                margin: 0 20px 0 0
+                margin: 0 5px 0 0
                 a
                     color: $branco
+                    display: block
+                    border: 1px solid $branco
+                    padding: 4px
+                    width: 25px
+                    height: 25px
+                    line-height: 12px
+                    text-align: center
+                    +border-radius(120px)
     
     h1,
     p
         color: $branco
+        text-align: center
+
+    h1
+        clear: both
+        margin: 190px auto 30px auto !important
+        border: 3px solid $branco
+        padding: 20px
+        font-size: 50px
+        text-transform: uppercase
+        display: table
+    
+    p
+        font-size: 25px

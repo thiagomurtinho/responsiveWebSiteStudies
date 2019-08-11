@@ -5832,19 +5832,27 @@ table {
   border-spacing: 0; }
 
 header {
-  background-image: url("../images/fundo-slide-pagina-inicial.jpg"); }
+  min-height: 475px;
+  background-image: url("../images/fundo-slide-pagina-inicial.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-attachment: fixed;
+  background-size: cover; }
   header:before, header:after {
     display: table;
     content: " "; }
   header:after {
     clear: both; }
   header .logo {
-    float: left; }
+    float: left;
+    margin: 30px 0 0; }
     header .logo img {
       width: 70px;
       height: 35px; }
   header #links {
-    float: right; }
+    float: right;
+    margin: 35px 0 0; }
     header #links nav,
     header #links .social {
       display: inline-block; }
@@ -5856,9 +5864,31 @@ header {
         text-transform: uppercase; }
     header #links .social li {
       display: inline-block;
-      margin: 0 20px 0 0; }
+      margin: 0 5px 0 0; }
       header #links .social li a {
-        color: white; }
+        color: white;
+        display: block;
+        border: 1px solid white;
+        padding: 4px;
+        width: 25px;
+        height: 25px;
+        line-height: 12px;
+        text-align: center;
+        -webkit-border-radius: 120px;
+        -moz-border-radius: 120px;
+        -ms-border-radius: 120px;
+        border-radius: 120px; }
   header h1,
   header p {
-    color: white; }
+    color: white;
+    text-align: center; }
+  header h1 {
+    clear: both;
+    margin: 190px auto 30px auto !important;
+    border: 3px solid white;
+    padding: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: table; }
+  header p {
+    font-size: 25px; }

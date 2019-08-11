@@ -26,43 +26,45 @@ html(lang="pt-br")
         
     body
         header
-            .logo
-                img(src="images/logo-tag-topo.svg" alt="Logo Topo Tag")
-            #links
-                nav
-                    ul
-                        each link, list in navLink
+            .container
+                .logo
+                    img(src="images/logo-tag-topo.svg" alt="Logo Topo Tag")
+                #links
+                    nav
+                        ul
+                            each link, list in navLink
+                                li
+                                    a(href!=link+'.html')= navList[list]
+                    ul.social
+                        each link, list in socialLink
                             li
-                                a(href!=link+'.html')= navList[list]
-                ul.social
-                    each link, list in socialLink
-                        li
-                            a(href!=link)
-                                i(class=socialFont[list])
+                                a(href!=link)
+                                    i(class=socialFont[list])
 
-            h1
-                |Thiago
-                strong  Murtinho
-            p Code // Share // Rebot
+                h1
+                    |Thiago
+                    strong  Murtinho
+                p Code // Share // Rebot
 
         main
-            .itens
-                .imagem
-                    img(src="images/foto-tag-miolo.png" alt="Foto Tag")
-                .lapis
-                    i(class="fa fa-pencil")
-                .codigo
-                    i(class="fa fa-code")
-                .coracao
-                    i(class="fa fa-heart")
-                .lapis
-                    i(class="fa fa-pencil")
-            
-            p 
-                strong Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                | Cumque est, culpa consectetur quos ea odit dignissimos perferendis voluptatibus nobis sapiente minus. Quos similique necessitatibus cum, rem in repudiandae libero repellendus.
-            a(href="#" class="botao medio")
-                i(class="fa fa-eye") Continue lendo
+            .container
+                .itens
+                    .imagem
+                        img(src="images/foto-tag-miolo.png" alt="Foto Tag")
+                    .lapis
+                        i(class="fa fa-pencil")
+                    .codigo
+                        i(class="fa fa-code")
+                    .coracao
+                        i(class="fa fa-heart")
+                    .lapis
+                        i(class="fa fa-pencil")
+                
+                p 
+                    strong Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Cumque est, culpa consectetur quos ea odit dignissimos perferendis voluptatibus nobis sapiente minus. Quos similique necessitatibus cum, rem in repudiandae libero repellendus.
+                a(href="#" class="botao medio")
+                    i(class="fa fa-eye") Continue lendo
 
         footer
             .logo-rodape
