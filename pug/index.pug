@@ -1,4 +1,4 @@
-- const styles = ['home', 'plugins', 'geral']
+- const styles = ['css/home.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', 'css/geral.css']
 - const title = "Home"
 - const navList = ['início', 'sobre', 'portifólio', 'contato']
 - const navLink = ['index', 'sobre', 'portifolio', 'contato']
@@ -19,10 +19,11 @@ html(lang="pt-br")
             )
         each style in styles
             link(
+                href= style
                 rel="stylesheet" 
-                href= "css/"+style+".css"
                 )
         title= title
+        
     body
         header
             .logo
@@ -31,11 +32,11 @@ html(lang="pt-br")
                 nav
                     ul
                         each link, list in navLink
-                            li.link
+                            li
                                 a(href!=link+'.html')= navList[list]
                 ul.social
                     each link, list in socialLink
-                        li.link
+                        li
                             a(href!=link)
                                 i(class=socialFont[list])
 
